@@ -1,0 +1,11 @@
+import random
+generated = random.randint(0,100)
+print(generated) # vreau sa vad numarul generat random
+x = -1  #l-am definit pe x
+while x != generated:
+    x=int(input ("nr este:"))   #am transformat string in int pentru ca primeam eroare ca nu se poate compara str cu int
+    if x >= generated:
+     print("Caut un numar mai mic")
+    else:
+     print ("Caut un numar mai mare")
+print("Corect")
