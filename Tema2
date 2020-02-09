@@ -1,0 +1,48 @@
+x=int(input("introduc nr de la tastatura"))
+suma=0
+nrpare=0
+nrimpare=0
+sumapare=0
+sumaimpare=0
+i=1
+palindrom=0
+while (x > 0):
+    modul= x % 10           # modulo scoate ultima cifra daca avem 123 scade 10 pana ramanem cu 3
+    if modul % 2 == 0:
+        nrpare = nrpare + i
+        sumapare = sumapare + modul  
+    else:
+        nrimpare = nrimpare + i
+        sumaimpare = sumaimpare + modul             
+    suma = suma + modul 
+    palindrom = (palindrom * 10) + modul
+    if palindrom == x:
+        print("Numarul este palindrom")
+    x = x // 10             #(impart numarul x la 10 daca introduc 123 ramane 123 //10 = 12 )
+if sumapare == suma:
+    print("Toate numele sunt pare", suma, "=", sumapare)
+print("suma numerelor din input este:", suma)
+print("numarul cifrelor pare",nrpare)
+print("numarul cifrelor impare",nrimpare)
+print("suma numerelor pare", sumapare)
+print("suma numerelor impare", sumaimpare)
+
+
+x=1
+contor=0
+maxim=0
+suma=0
+i=1
+while (x != 0 ):
+    n=x
+    x=int(input('Insereaza numarul:'))
+    if x % 2 != 0:
+        suma=suma + x
+        print ('Afiseaza suma numerelor impare:',suma)
+    if x > maxim:
+        maxim=x
+        print('Numarul maxim',maxim)
+    if x == n ++ 1: 
+            contor=contor+i
+            print('Suma numerelor consecutive',contor)
+ 
