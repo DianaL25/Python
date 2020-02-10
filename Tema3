@@ -1,0 +1,25 @@
+#tema3_1
+nrpar=0
+i=0
+for i in range(0,100):
+    if i % 2 ==0:
+        nrpar=nrpar+i
+    if i<10:
+        print('Numar intre (0,10)',i)
+    if i>=10 and i<=20:
+        continue
+print('Suma numerelor pare:',nrpar)
+        
+ #tema3_2
+ i=0
+for i in range(0,100):
+    if i %3 ==0 and i % 5 == 0:
+        print ('FizzBuzz')
+        continue
+    elif i % 3 ==0:
+        print('Fizz')
+        continue
+    elif i % 5 ==0:
+        print('Buzz')
+        continue
+    print(i)
