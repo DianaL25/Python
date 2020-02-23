@@ -1,0 +1,23 @@
+class operations():
+    variabila1={}
+    variabila2={}
+    def adunare(self):
+        adunare = self.variabila1 + self.variabila2
+        print("Adunare:".format(self.variabila1, self.variabila2), adunare)
+    def scadere(self):
+        return self.variabila1 - self.variabila2
+    def inmultire(self):
+        return self.variabila1 * self.variabila2
+    def impartire(self):
+        if self.variabila1 and self.variabila2 != 0:
+            return self.variabila1 / self.variabila2
+        else:
+            print ("Avem o variabila = 0, nu se poate efectua impartirea")
+        
+instance = operations()
+instance.variabila1 = int(input('primul nr:'))
+instance.variabila2 = int(input('al doilea nr:'))
+instance.adunare()
+print("Scaderea:",instance.scadere())
+print("Inmultirea:",instance.inmultire())
+print("Impartirea:",instance.impartire())
